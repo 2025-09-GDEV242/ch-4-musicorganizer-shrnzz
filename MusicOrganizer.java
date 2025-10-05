@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Random;
+import java.util.Collections;
 
 /**
  * A class to hold details of audio tracks.
@@ -84,6 +86,13 @@ public class MusicOrganizer
         }
     }
     
+    /*
+       This method will play all the tracks in a random order only once.
+    */
+   
+    public void playAllRandomly(){
+        
+    }
     /**
      * Return the number of tracks in the collection.
      * @return The number of tracks in the collection.
