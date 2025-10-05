@@ -4,8 +4,8 @@ import java.util.ArrayList;
  * A class to hold details of audio tracks.
  * Individual tracks may be played.
  * 
- * @author Sahar
- * @version Naz
+ * @author Sahar Naz
+ * @version 2025-10-05
  */
 public class MusicOrganizer
 {
@@ -76,6 +76,11 @@ public class MusicOrganizer
             player.playSample(track.getFilename());
             
             //print track to console
+            System.out.println("Now playing (shuffle): " + track.getArtist()
+            + " - " + track.getTitle());
+        }
+        else {
+            System.out.println("No tracks available to play...");
         }
     }
     
