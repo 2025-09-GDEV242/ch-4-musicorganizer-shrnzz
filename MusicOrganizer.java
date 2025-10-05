@@ -99,7 +99,7 @@ public class MusicOrganizer
             Collections.shuffle(shuffledTracks, new Random());
             
             //play shuffled tracks
-            for(Track track : shuffledTrack){
+            for(Track track : shuffledTracks){
                 System.out.println("Now playing all tracks randomly once each: "
                 + track.getArtist() + " - " + track.getTitle());
                 player.playSample(track.getFilename());
