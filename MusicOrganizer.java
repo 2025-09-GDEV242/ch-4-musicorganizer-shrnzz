@@ -96,7 +96,7 @@ public class MusicOrganizer
             ArrayList<Track> shuffledTracks = new ArrayList<>(tracks);
             
             //shuffle the list using collections
-            Collections.shuffle(shuffledTrack new Random());
+            Collections.shuffle(shuffledTracks new Random());
             
             //play shuffled tracks
             for(Track track : shuffledTrack){
