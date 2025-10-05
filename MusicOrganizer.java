@@ -66,8 +66,16 @@ public class MusicOrganizer
     public void playRandomTrack()
     {
         if (tracks.size() > 0){
-            //This will creat a random index 
+            //This will create a random index 
             int randomIndex = (int)(Math.random() * tracks.size());
+            
+            //get the random track
+            Track track = tracks.get(randomIndex);
+            
+            //play track
+            player.playSample(track.getFilename());
+            
+            //print track to console
         }
     }
     
