@@ -95,10 +95,18 @@ public class MusicOrganizer
             // new list that is a copy of the original
             ArrayList<Track> shuffledTracks = new ArrayList<>(tracks);
             
-            //shuffle the list
+            //shuffle the list using collections
             Collections.shuffle(shuffledTrack new Random());
             
-            
+            //play shuffled tracks
+            for(Track track : shuffledTrack){
+                System.out.println("Now playing all tracks randomly once each: "
+                + track.getArtist() + " - " + track.getTitle());
+                player.playSample(track.getFilename());
+            }
+        } 
+        else {
+            System.out.println("No tracks available to play");
         }
     }
     /**
