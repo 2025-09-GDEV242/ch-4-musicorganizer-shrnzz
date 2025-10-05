@@ -91,7 +91,15 @@ public class MusicOrganizer
     */
    
     public void playAllRandomly(){
-        
+        if(tracks.size() > 0 ){
+            // new list that is a copy of the original
+            ArrayList<Track> shuffledTracks = new ArrayList<>(tracks);
+            
+            //shuffle the list
+            Collections.shuffle(shuffledTrack new Random());
+            
+            
+        }
     }
     /**
      * Return the number of tracks in the collection.
